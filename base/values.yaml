@@ -1,1 +1,2 @@
 enableNetworkPolicy: "true"
+imagePullSecret: "my-registry-secret"

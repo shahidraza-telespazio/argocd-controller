@@ -5,6 +5,7 @@ namespace: kube-system
 
 resources:
   - namespace.yaml
+  - image-pull-secret.yaml
 
 helmCharts:
   - name: aws-vpc-cni
