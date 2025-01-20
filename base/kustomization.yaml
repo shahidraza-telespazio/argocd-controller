@@ -1,0 +1,13 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: kube-system
+
+resources:
+  - namespace.yaml
+
+helmCharts:
+  - name: aws-vpc-cni
+    repo: https://aws.github.io/eks-charts
+    releaseName: amazon-network-policy-controller-k8s
+    version: 1.19.2 # Use the desired version
